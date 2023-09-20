@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-gzvr
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-gzvr
+    app.kubernetes.io/part-of: ci10t-776-0073-app
+  name: devfile-sample-gzvrbus6
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-gzvr
+    weight: null
+status: {}

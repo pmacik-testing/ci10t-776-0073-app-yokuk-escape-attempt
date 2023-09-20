@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gzvr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0073-tenant/ci10t-776-0073-app/devfile-sample-gzvr@sha256:5435d9a6a16229eea2a609a1c738cc4740cd5231ff727d1ef4b9f7e361586267
+        name: my-nodejs
+        resources: {}
+status: {}
